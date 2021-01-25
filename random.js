@@ -1,4 +1,4 @@
-var foods = ["jajang 짜장면", "jjambbong 짬뽕"];
+var foods = ["No 꽝", "jajang 짜장면", "jjambbong 짬뽕"];
 
 function init() {
 	var html= "", food = "";
@@ -25,7 +25,7 @@ function init() {
 }
 
 function addImg() {
-	choiceImg(parseInt(Math.random() * 2));
+	choiceImg(parseInt(Math.random() * 3));
 }
 
 function choiceImg(index) {
