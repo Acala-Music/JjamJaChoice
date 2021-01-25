@@ -1,0 +1,2 @@
+User-agent: *Allow:/
+Sitemap: https://jjamjachoice.netlify.app/sitemap.xml
