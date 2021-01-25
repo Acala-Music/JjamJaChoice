@@ -1,6 +1,7 @@
 .title {
 	font-weight: bold;
 	font-size: 30px;
+	font-family: 'Jua', sans-serif;
 }
 
 .nav-distance {
@@ -8,10 +9,18 @@
 }
 
 .naverlight .navbar-brand {
-	font-family: NamnumSquareR;
+	font-family: 'Jua', sans-serif;
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
+}
+
+.navbar-brand {
+	font-family: 'Jua', sans-serif;
+}
+
+.nav-link {
+	font-family: 'Jua', sans-serif;
 }
 
 .navbar-light .navbar-toggler {
@@ -23,11 +32,12 @@
 }
 
 .title {
-	font-family: NanumSquareR;
-	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
+	font-size: 2.4rem;
 	line-height: 1.67;
 	text-align: center;
 	color: #35465d;
+	font-weight: 500;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -37,6 +47,7 @@
   }
 	.navbar-brand {
 		font-size: 2rem;
+		font-family: 'Jua', sans-serif;
 	}
 }
 
