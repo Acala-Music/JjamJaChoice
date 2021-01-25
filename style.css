@@ -1,0 +1,122 @@
+.title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.nav-distance {
+	padding: 2.1% 7.7%
+}
+
+.naverlight .navbar-brand {
+	font-family: NamnumSquareR;
+	line-height: 1.68;
+	text-align: left;
+	color: #35465d;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #f8f9fa;
+}
+
+.section {
+	margin-top: 100px;
+}
+
+.title {
+	font-family: NanumSquareR;
+	font-size: 2rem;
+	line-height: 1.67;
+	text-align: center;
+	color: #35465d;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+	.navbar-brand {
+		font-size: 2rem;
+	}
+}
+
+* {
+	margin : 0rem;
+	padding : 0rem;
+}
+
+.container {
+	width : 57.6rem;
+	margin : 0 auto;
+}
+
+.content {
+	width : 30rem;
+	padding-top : 1.2rem;
+	padding-bottom : 2.4rem;
+	margin : 3rem auto 0;
+	background : #eee;
+}
+
+.btn-group {
+	text-align : center;
+}
+
+.btn-group>button {
+	height : 1.8rem;
+	border : 0.06rem solid #345;
+	color : #345;
+	font-weight : bold;
+	background : white;
+	padding : 0 0.6rem;
+}
+
+.btn-group>button:active {
+	color : white;
+	background : black;
+	outline : none;
+}
+
+.img-view {
+	text-align : center;
+	height : 9rem;
+}
+
+.msg-area {
+	margin : 0.6rem auto;
+	font-size : 1.2rem;
+	font-weight : bold;
+	text-align : center;
+}
+
+.img-thumb {
+	margin-top : 0.6rem;
+	text-align : center;
+}
+
+.img-thumb>img {
+	width : 6.2rem;
+	height : 4.8rem;
+	margin : 0.6rem;
+	box-sizing : border-box;
+	opacity : 0.5;
+}
+
+.img-thumb>img.choice {
+	border : 0.2rem solid #345;
+	opacity : 1;
+}
+
+.img-thumb>img:hover {
+	opacity : 1;
+}
+
+.subtitle {
+	font-size: 1rem;
+	color: #808080;
+}
+
+.subsubtitle {
+	font-size: 0.5rem;
+	color: #808080;
+}
