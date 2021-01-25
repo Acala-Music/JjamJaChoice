@@ -122,6 +122,11 @@
 	opacity : 1;
 }
 
+.text {
+	font-family: 'Jua', sans-serif;
+	font-size: 0.8rem
+}
+
 .subtitle {
 	font-size: 1rem;
 	color: #808080;
@@ -130,4 +135,9 @@
 .subsubtitle {
 	font-size: 0.5rem;
 	color: #808080;
+}
+
+.add-banner {
+	width: 320px;
+	margin: 0 auto;
 }
