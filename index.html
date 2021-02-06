@@ -9,10 +9,16 @@
 			content="P6ih_h6bR5ajECSKR6jlkaktjzQJwfny2QcXn5yBpBI"
 		/>
 		<meta name="title" content="짜장 짬뽕 선택해주는 사이트" />
-		<meta property="og:title" content="짜장vs짬뽕">
+		<meta property="og:title" content="짜장vs짬뽕" />
 		<meta name="keywords" content="짜장vs짬뽕, 짜장, 짜장면, 짬뽕, 선택, 사이트, 프로그램" />
-		<meta name="description" content="짜장과 짬뽕 중 무엇을 먹을지 고민되나요? 한번 테스트 해보세요! 짜장과 짬뽕 2개의 메뉴 중 1개를 랜덤으로 선택해줍니다. 짜장vs짬뽕" />
-		<meta property="og:description" content="짜장을 먹을까 짬뽕을 먹을까 망설여질 때 사용할 수 있는 사이트! 짜장과 짬뽕 2개의 메뉴 중 1개를 랜덤으로 선택해줍니다.">
+		<meta
+			name="description"
+			content="짜장과 짬뽕 중 무엇을 먹을지 고민되나요? 한번 테스트 해보세요! 짜장과 짬뽕 2개의 메뉴 중 1개를 랜덤으로 선택해줍니다. 짜장vs짬뽕"
+		/>
+		<meta
+			property="og:description"
+			content="짜장을 먹을까 짬뽕을 먹을까 망설여질 때 사용할 수 있는 사이트! 짜장과 짬뽕 2개의 메뉴 중 1개를 랜덤으로 선택해줍니다."
+		/>
 
 		<!-- Bootstrap CSS -->
 		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
@@ -33,9 +39,124 @@
 		<meta name="naver-site-verification" content="5eb3551441e03c5c1824c1517f705ad96f767591" />
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+			<!-- body {
+				font-size: 1.0rem;
+				padding: 0;
+				margin: 0;
+			}
+			h3 {
+				color: #85144b;
+				font-size: 1rem;
+			}
+
+			#promotionBanner {
+				width: 100%;
+				height: 80px;
+				background-color: #f8f9fa;
+				color: #f1f1f1;
+				overflow: hidden;
+			}
+			.popContents {
+				width: 1100px;
+				margin: 0 auto;
+				padding: 0;
+				overflow: hidden;
+				text-align: center;
+			}
+			.popClose {
+				width: 1100px;
+				margin: 0 auto;
+				text-align: right;
+				font-size: 0.8rem;
+				padding: 0;
+			}
+			#chkday {
+				color: #35465d;
+			}
+			label[for='chkday'] {
+				cursor: pointer;
+				color: #35465d;
+				padding-right: 0.6rem;
+			}
+
+			.contents {
+				width: 1100px;
+				margin: 0 auto;
+				height: 900px;
+				background-color: #e0e0e0;
+				overflow: hidden;
+				padding: 20px;
+			}
+			//-->
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script language="JavaScript">
+			<!--
+				//쿠키저장 함수
+				function setCookie( name, value, expiredays ) {
+					var todayDate = new Date();
+					todayDate.setDate( todayDate.getDate() + expiredays );
+					document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+				}
+
+				$(document).ready(function(){
+					$("#promotionBanner .btnClose").click(function(){
+						//오늘만 보기 체크박스의 체크 여부를 확인 해서 체크되어 있으면 쿠키를 생성한다.
+						if($("#chkday").is(':checked')){
+							setCookie( "topPop", "done" , 1 );
+							//alert("쿠키를 생성하였습니다.");
+						}
+						//팝업창을 위로 애니메이트 시킨다. 혹은 slideUp()
+						//$('#promotionBanner').animate({height: 0}, 500);
+						$('#promotionBanner').slideUp(500);
+					});
+				});
+
+			//-->
+		</script>
 	</head>
 
 	<body>
+		<!-- Layer POPUP -->
+		<div id="promotionBanner">
+			<div class="popContents">
+				<ins
+					class="kakao_ad_area"
+					style="display: none;"
+					data-ad-unit="DAN-nugZa93VXjtWCN1a"
+					data-ad-width="320"
+					data-ad-height="50"
+				></ins>
+				<div class="popClose">
+					<script
+						type="text/javascript"
+						src="//t1.daumcdn.net/kas/static/ba.min.js"
+						async
+					></script>
+					<input type="checkbox" value="checkbox" name="chkbox" id="chkday" /><label
+						for="chkday"
+						>오늘 하루 그만보기
+					</label>
+					<a href="#none" class="btnClose"
+						><img src="./img/btn_close.png" alt="배너 닫기" width="10"
+					/></a>
+				</div>
+			</div>
+		</div>
+
+		<script language="Javascript">
+			//저장된 해당 쿠키가 있으면 창을 안 띄운다 없으면 뛰운다.
+			cookiedata = document.cookie;
+			if (cookiedata.indexOf('topPop=done') < 0) {
+				document.all['promotionBanner'].style.display = 'block';
+			} else {
+				document.all['promotionBanner'].style.display = 'none';
+			}
+		</script>
+		<!-- Layer Popup END -->
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-light nav-distance">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">짜장vs짬뽕</a>
@@ -53,10 +174,17 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="https://jjamjachoice.netlify.app/">짜장vs짬뽕</a>
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="https://jjamjachoice.netlify.app/"
+								>짜장vs짬뽕</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://jjamjachoice.netlify.app/">추후 업뎃</a>
+							<a class="nav-link" href="https://jjamjachoice.netlify.app/"
+								>추후 업뎃</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -109,22 +237,6 @@
 					data-ad-unit="DAN-D8cO1TkyKK1CTJOK"
 					data-ad-width="320"
 					data-ad-height="100"
-				></ins>
-			</div>
-
-			<script
-				type="text/javascript"
-				src="//t1.daumcdn.net/kas/static/ba.min.js"
-				async
-			></script>
-
-			<div class="add_banner2">
-				<ins
-					class="kakao_ad_area"
-					style="display: none;"
-					data-ad-unit="DAN-nugZa93VXjtWCN1a"
-					data-ad-width="320"
-					data-ad-height="50"
 				></ins>
 			</div>
 
